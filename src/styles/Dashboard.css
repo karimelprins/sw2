@@ -1,0 +1,142 @@
+/* تنسيق الحاوية الرئيسية للوحة التحكم */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f6f9;
+  }
+  
+  /* تنسيق قسم المستشفيات المتاحة */
+  .hospital-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* تنسيق بطاقة المستشفى */
+  .hospital-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .hospital-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .hospital-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .hospital-card p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .hospital-card .hospital-location {
+    font-size: 0.9em;
+    color: #007bff;
+  }
+  
+  .hospital-card button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .hospital-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* تنسيق قسم ICU الخاص بالمستشفى */
+  .icus-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .icu-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .icu-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icu-card h4 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  .icu-card p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .icu-card .icu-status {
+    font-size: 0.9em;
+    color: #28a745;
+  }
+  
+  .icu-card .icu-status.occupied {
+    color: #dc3545;
+  }
+  
+  /* تنسيق الحافة السفلية */
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  /* تنسيق زر "حجز" في حالة إذا كان القسم شاغرًا */
+  .reserve-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .reserve-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* تنسيق رسالة النجاح أو الخطأ */
+  .success-message,
+  .error-message {
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .success-message {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .error-message {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  
